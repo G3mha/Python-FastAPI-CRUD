@@ -3,6 +3,7 @@ from sqlalchemy.orm import Session
 import bcrypt
 from . import crud, models, schemas
 from .database import SessionLocal, engine
+import os
 
 models.Base.metadata.create_all(bind=engine)
 
@@ -14,6 +15,12 @@ def get_db():
         yield db
     finally:
         db.close()
+
+@app.get("/")
+def root():
+    """Rota raiz."""
+    hostname = os.uname().nodename
+    return {200: {"description": f"Hello World from instance {hostname}"}}
 
 # ==== GET ====
 
