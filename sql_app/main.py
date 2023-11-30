@@ -5,7 +5,12 @@ from . import crud, models, schemas
 from .database import SessionLocal, engine
 import os
 
-models.Base.metadata.create_all(bind=engine, checkfirst=True)
+
+try:
+    models.Base.metadata.create_all(bind=engine)
+except:
+    print("Tabelas já existem")
+
 
 app = FastAPI()
 
