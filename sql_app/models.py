@@ -28,11 +28,6 @@ class MembrosSQL(Base):
     rg = Column(VARCHAR(20), index=True)
     hashed_password = Column(VARCHAR(200), index=True)
 
-    __table_args__ = (
-        CheckConstraint('peso > 0', name='peso_positivo'),
-        CheckConstraint('data_inscricao_academia > data_nascimento', name='data_inscricao_academia_valida'),
-    )
-
     planos = relationship("PlanosSQL", secondary=membro_plano_association, back_populates="membros", cascade="all, delete")
 
 
@@ -48,14 +43,5 @@ class PlanosSQL(Base):
     tempo_duracao = Column(Integer, index=True)
     beneficios = Column(VARCHAR(500), index=True)
     ativo = Column(Boolean, index=True)
-
-    __table_args__ = (
-        CheckConstraint('preco > 0', name='preco_positivo'),
-        CheckConstraint('multa_valor_fidelidade > 0', name='multa_valor_fidelidade_positivo'),
-        CheckConstraint('tempo_fidelidade > 0', name='tempo_fidelidade_positivo'),
-        CheckConstraint('tempo_duracao > 0', name='tempo_duracao_positivo'),
-        CheckConstraint('tempo_fidelidade <= tempo_duracao', name='tempo_fidelidade_menor_igual_tempo_duracao'),
-        CheckConstraint('tempo_fidelidade = 0 or multa_valor_fidelidade > 0', name='multa_valor_fidelidade_valido'),
-    )
 
     membros = relationship("MembrosSQL", secondary=membro_plano_association, back_populates="planos")
