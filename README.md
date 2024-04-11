@@ -1,4 +1,4 @@
-# Blue Point Fit (Gym)
+# Gym-Bros
 
 ## Sobre o desenvolvimento
 
