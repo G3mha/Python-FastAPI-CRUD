@@ -1,4 +1,4 @@
-# Gym-Bros
+# Python-FastAPI-CRUD
 
 ## Sobre o desenvolvimento
 
