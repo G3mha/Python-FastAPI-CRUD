@@ -1,4 +1,4 @@
-# Python-FastAPI-CRUD
+# REST API for Gym Management
 
 🇧🇷 Version in Portuguese: [click here](./README-pt_BR.md)
 

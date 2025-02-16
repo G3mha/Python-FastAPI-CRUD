@@ -1,4 +1,4 @@
-# Python-FastAPI-CRUD
+# REST API para Gerenciamento de Academias
 
 🇺🇸 Versão em Inglês: [clique aqui](./README.md)
 
