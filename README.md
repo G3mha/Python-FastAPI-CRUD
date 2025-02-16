@@ -1,33 +1,35 @@
 # Python-FastAPI-CRUD
 
-## Sobre o desenvolvimento
+🇧🇷 Version in Portuguese: [click here](./README-pt_BR.md)
 
-Contribuidores:
+## About the Development
 
-- [Enricco Gemha](https://github.com/g3mha)
-- [Antônio Amaral](AntonioAEMartins)
+Contributors:
 
-*Este é um projeto desenvolvido durante o ministério da disciplina de Megadados no Instituto de Ensino e Pesquisa (Insper).*
+- [Enricco Gemha](https://github.com/G3mha)
+- [Antônio Amaral](https://github.com/AntonioAEMartins)
 
-## Objetivo
+Project developed for the **Big Data** course in the **Computer Engineering** program at **Insper**.
 
-O objetivo do projeto é desenvolver um microsserviço de controle de membros e planos de uma academia. 
+## Objective
 
-Para isso, criou-se uma API RESTful que permita o gerenciamento do cadastro de membros e planos da academia, seguindo o modelo CRUD (Create, Read, Update, Delete). A API oferece as seguintes funcionalidades:
+The project aims to develop a microservice for managing gym members and plans.
 
-- O usuário pode gerenciar o cadastro de membros, incluindo a criação, leitura, atualização e exclusão de informações de membros.
-- O usuário pode gerenciar o cadastro de planos, incluindo a criação, leitura, atualização e exclusão de informações de planos.
+For this purpose, a RESTful API was created to manage the registration of gym members and plans, following the CRUD (Create, Read, Update, Delete) model. The API offers the following functionalities:
 
-## Ferramentas utilizadas
+- Users can manage member registration, including creating, reading, updating, and deleting member information.
+- Users can manage plan registration, including creating, reading, updating, and deleting plan information.
 
-A API utiliza o framework FastAPI do Python.
+## Tools Used
 
-Para integrá-la a um banco de dados, foi utilizado o SQLAlchemy, que é um ORM (Object Relational Mapper) para Python. O SQLAlchemy permite que o usuário escreva código Python para manipular um banco de dados, sem precisar escrever SQL diretamente. Escolheu-se o PostgresSQL como banco de dados para o projeto.
+The API uses Python's FastAPI framework.
 
-## Vídeo demonstração das funcionalidades do projeto
+To integrate it with a database, SQLAlchemy was used, which is an ORM (Object Relational Mapper) for Python. SQLAlchemy allows users to write Python code to manipulate a database without having to write SQL directly. PostgreSQL was chosen as the database for the project.
+
+## Project Features Demonstration Video
 
 [Link: https://youtu.be/gqzUmahmUUI](https://youtu.be/gqzUmahmUUI)
 
-## Diagrama de Entidade-Relacionamento
+## Entity-Relationship Diagram
 
-![Diagrama ER](diagrama_ER.png)
+![ER Diagram](diagrama_ER.png)
